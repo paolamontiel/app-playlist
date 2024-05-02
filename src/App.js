@@ -21,7 +21,7 @@ const App = () => {
       </nav>
       <div className="gallery">
         {albumCovers.map((cover, index) => (
-          <img key={index} src={`/images/${cover}`} alt={`Álbum ${index + 1}`} className="album-cover" />
+          <img key={index} src={`${process.env.PUBLIC_URL}/images/${cover}`} alt={`Álbum ${index + 1}`} className="album-cover" />
         ))}
       </div>
       <Footer />
